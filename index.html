@@ -30,6 +30,7 @@
             align-items: center;
             white-space: nowrap;
             width: 130px;
+            
             background: rgb(224, 224, 225);
 
         }
@@ -37,25 +38,36 @@
         .parent {
             border: 2px solid rgb(0, 0, 116);
             background: rgb(222, 222, 255);
+            
+            width: 500px;
             height: 500px;
-            aspect-ratio: 1;
-            margin: 2rem;       
+            
+            margin: 2rem;    
         }
         
         .child {
             display: grid;
             place-items: center;
+
             color: white;
             background: rgb(59, 5, 236);
-        
+
             width: 250px;
+            height: 250px;
+
             aspect-ratio: 1;
         }
     
         .title {
-            text-transform: capitalize;
+            text-transform: uppercase;
+
+            text-shadow: -1px -1px 0 #686868,
+                         1px -1px 0 #686868, 
+                        -1px 1px 0 #686868, 
+                        1px 1px 0 #686868;
+            color: rgb(224, 224, 225);
             rotate: -90deg;
-          
+            font-size: clamp(1rem, 4rem + .2vh, 6vh);
         }
     </style>
 
