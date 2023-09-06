@@ -32,15 +32,21 @@
             width: 130px;
             
             background: rgb(224, 224, 225);
-
         }
     
+        .content {
+            display: grid;
+            place-items: center;
+            width: 50%;
+            height: 100%;
+        }
+
         .parent {
             border: 2px solid rgb(0, 0, 116);
             background: rgb(222, 222, 255);
             
-            width: 500px;
-            height: 500px;
+            width: 50%;
+            aspect-ratio: 1;
 
             margin: 2rem;    
         }
@@ -52,8 +58,7 @@
             color: white;
             background: rgb(59, 5, 236);
 
-            width: 250px;
-            height: 250px;
+            width: 50%;
 
             aspect-ratio: 1;
         }
@@ -61,13 +66,14 @@
         .title {
             text-transform: uppercase;
 
-            text-shadow: -1px -1px 0 #686868,
-                         1px -1px 0 #686868, 
-                         -1px 1px 0 #686868, 
-                         1px 1px 0 #686868;
+            text-shadow: -1px -1px 0 #8d8c8c,
+                         1px -1px 0 #8d8c8c, 
+                         -1px 1px 0 #8d8c8c, 
+                         1px 1px 0 #8d8c8c;
             color: rgb(224, 224, 225);
             rotate: -90deg;
-            font-size: clamp(1rem, 4rem + .2vh, 6vh);
+            
+            font-size: clamp(.5rem, 4rem, 6vh);    /* clamp är responsivt. börja med det minsta värdet du kan tänka dig, det optimala och sedan det största vh = viewport height  alltså procentuell höjd av  skärmen */
         }
     </style>
 
@@ -77,10 +83,11 @@
     <div class="left-col">
         <h1 class="title">Enkla animationsexempel</h1>
     </div>
-
-    <div class="parent">
-        <div class="child">
-            <p>BOX</p>
+    <div class="content">
+        <div class="parent">
+            <div class="child">
+                <p>LÅDA</p>
+            </div>
         </div>
     </div>
 </body>
