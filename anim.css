@@ -1,11 +1,26 @@
 /* Animations */
 
+/* 
+EGENSKAPER:
+background-color
+transition              <-- muy importante!
+color
+transform
+scale
+width
+height
+animation
+
+REGLER
+keyframes (procent, from, to)
+*/
 
 .parent {
 
 }
 
 .child {
+
 
 }
 
