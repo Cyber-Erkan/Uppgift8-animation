@@ -47,13 +47,8 @@
         .parent {
             border: 2px solid rgb(168, 168, 216);
             border-radius: 16px;
-            background: #dedeff;
-            
-            width: 50%;
-            aspect-ratio: 1;
-
             margin-inline: 1rem; 
-            
+
             background: repeating-linear-gradient(
               -45deg,
               rgba(197, 188, 255, 0.3),
@@ -61,6 +56,9 @@
              transparent 1px,
              transparent 10px
             );
+            
+            width: 50%;
+            aspect-ratio: 1;
         }
         
         .child {
@@ -87,7 +85,7 @@
             color: rgb(224, 224, 225);
             rotate: -90deg;
             
-            font-size: clamp(.5rem, 4rem, 6vh);    /* clamp är responsivt. börja med det minsta värdet du kan tänka dig, det optimala och sedan det största vh = viewport height  alltså procentuell höjd av  skärmen */
+            font-size: clamp(.5rem, 4rem, 6vh);    /* clamp är responsivt. börja med det minsta värdet du kan tänka dig, det optimala och sedan det största. vh = viewport height  alltså procentuell höjd av skärmen */
         }
     </style>
 
