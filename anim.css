@@ -2,18 +2,18 @@
 
 /* 
 EGENSKAPER:
-background-color
-transition              <-- muy importante!
-color
-transform
-scale
-rotate
+background-color: gray;
+transition: transform 1s;              <-- muy importante!
+color: blue;
+transform: translateX(0) translateY(0)
+scale: 110%;
+rotate: 1 0 1 120deg;
 width
 height
-animation
+animation: regelnamn millisekunder;
 
-REGLER
-keyframes (procent, from, to)
+REGLER:
+@keyframes namn 
 */
 
 .parent {
@@ -24,3 +24,28 @@ keyframes (procent, from, to)
 
 }
 
+
+
+
+
+
+/* keyframe-regler du kan prova 
+   aktivera genom att skriva animation: regelnamn millisekunder;
+   i den sak som ska animeras.
+*/
+
+@keyframes rotate {
+   0% {
+       rotate: 1 0 1 0deg;
+   }
+
+   50% {
+       background-color: red;
+   }
+
+   100% {
+       rotate: 1 0 1 360deg;
+       background-color: blue;
+     
+   }
+}
