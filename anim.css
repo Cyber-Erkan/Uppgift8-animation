@@ -13,7 +13,9 @@ height
 animation: regelnamn millisekunder;
 
 REGLER:
-@keyframes namn 
+@keyframes namn
+
+Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".parent:hover > .child {  } "
 */
 
 .parent {
