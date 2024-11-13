@@ -15,16 +15,17 @@ animation: regelnamn millisekunder;
 REGLER:
 @keyframes namn
 
-Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".parent:hover > .child {  } "
+Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".parent:hover .child {  } "
 */
 
-.parent {
 
+.parent:hover .child{
+    animation: rotate 3s infinite;
 }
 
 .child {
     color: white;
-    background: rgb(59, 5, 236);
+    background: rgb(1, 1, 255);
 }
 
 
@@ -37,17 +38,23 @@ Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".pa
 */
 
 @keyframes rotate {
-   0% {
-       rotate: 1 0 1 0deg;
-   }
+    0% {
+        transform: translateX(0) translateY(0);
+        background: rgb(1, 1, 255);
+    }
 
-   50% {
-       background-color: red;
-   }
+    25% {
+        transform: translateX(100%) translateY(0);
+    }
 
-   100% {
-       rotate: 1 0 1 360deg;
-       background-color: blue;
-     
-   }
+    50% {
+        
+        transform: translateX(100%) translateY(100%);
+        background: rgb(0, 223, 97);
+
+    }
+
+    75% {
+        transform: translateX(0) translateY(100%);
+    }
 }
