@@ -105,21 +105,6 @@
             
             font-size: clamp(0.1rem, 7.5vh, 7.5rem);    /* clamp är responsivt. börja med det minsta värdet du kan tänka dig, det optimala och sedan det största. vh = viewport height  alltså procentuell höjd av skärmen */
         }
-
-
-        p::after {
-            content: 'HOVER OVER ME';
-            font-size: 1.3rem;
-            transition: font-size 1s ease-in-out;
-        }
-
-        .parent:hover > .child p::after {
-            content: 'MOVING...';
-            font-size: 2.2rem;
-    
-        }
-        
-        
     </style>
 
     <title>Enkla animationsexempel</title>  
@@ -131,7 +116,7 @@
     <main class="content">
         <div class="parent">
             <div class="child">
-                <p class="box-text"></p>
+                <p class="box-text">Hover over me</p>
             </div>
         </div>
     </main>

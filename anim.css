@@ -19,9 +19,6 @@ Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".pa
 */
 
 
-.parent:hover .child{
-    animation: rotate 3s infinite;
-}
 
 .child {
     color: white;
@@ -39,22 +36,19 @@ Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".pa
 
 @keyframes rotate {
     0% {
-        transform: translateX(0) translateY(0);
-        background: rgb(1, 1, 255);
+
     }
 
     25% {
-        transform: translateX(100%) translateY(0);
+
     }
 
     50% {
-        
-        transform: translateX(100%) translateY(100%);
-        background: rgb(0, 223, 97);
+
 
     }
 
     75% {
-        transform: translateX(0) translateY(100%);
+
     }
 }
