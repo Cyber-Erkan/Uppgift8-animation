@@ -22,9 +22,15 @@ Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".pa
 
 .child {
     color: white;
-    background: rgb(1, 1, 255);
+    background: lightskyblue;
 }
 
+.parent:hover .child {
+    animation: rotate 2000ms infinite;
+}
+.img{
+    max-width: fit-content;
+}
 
 
 
@@ -36,19 +42,22 @@ Kom ihåg: om du vill påverka en underliggande tagg (t.ex. .child) skriv i ".pa
 
 @keyframes rotate {
     0% {
-
+        transform: (0);
     }
-
     25% {
-
+        transform: translateX(100%) translateY(0%);
+        background-color: orange;
     }
-
     50% {
-
-
+        transform: translateX(100%) translateY(100%);
+        background-color: lightgreen;
     }
-
     75% {
-
+        transform: translateX(0%) translateY(100%);
+        background-color: yellow;
+    }
+    100%{
+        transform: translateX(0%) translateY(0%);
+        background-color: lightskyblue;
     }
 }
